@@ -26,10 +26,6 @@ html {
 	-webkit-text-size-adjust: 100%;
 }
 
-body {
-	margin: 0;
-}
-
 article,
 aside,
 details,
@@ -257,15 +253,6 @@ html {
 	box-sizing: inherit;
 }
 
-body {
-	font-weight: normal;
-	line-height: 1;
-	text-rendering: optimizeLegibility;
-	word-wrap: break-word;
-	-webkit-overflow-scrolling: touch;
-	-webkit-text-size-adjust: none;
-}
-
 body,
 input,
 button {
@@ -392,8 +379,6 @@ textarea {
  * ------------------------------------------------------------------- 
  */
 .row {
-	width: 94%;
-	max-width: 1140px;
 	margin: 0 auto;
 }
 
@@ -495,6 +480,10 @@ textarea {
 
 	[class*="col-"] {
 		padding: 0 18px;
+	}
+	
+	.navbar-nav{
+		align-items: center;
 	}
 
 }
