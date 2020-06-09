@@ -26,6 +26,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- favicons
@@ -80,44 +81,53 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+				<!-- <ul class="nav-download">
+					<li>
+						<a href="#">Download CV</a>
+
+					</li>
+				</ul> -->
 				<div class="navbar-nav">
-					<a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+					<a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					<a class="nav-item nav-link" href="#about" title="">About</a>
 					<a class="nav-item nav-link" href="#resume" title="">Resume</a>
 					<a class="nav-item nav-link" href="#portfolio" title="">Portfolio</a>
 				</div>
+				<ul class=" nav-icon">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				</ul> <!-- /intro-social -->
 			</div>
 		</nav>
 	</header> <!-- /header -->
 
 	<!-- intro section
    ================================================== -->
-	<section id="intro">
-
-		<div class="intro-overlay"></div>
+	<section id="intro" class="container">
 
 		<div class="intro-content">
 			<div class="row">
-
 				<div class="col-twelve">
-
-					<h5>Hello, World.</h5>
-					<h1 class="glitch" data-text="I'm John.">I'm John.</h1>
+					<h5>Hello, World</h5>
+					<h1 class="glitch" data-text="I'm John">I'm John</h1>
 					<div class="container-subtitle">
 						<h2 class="subtitle">Développeur full stack</h2>
 					</div>
-
-					<a class="button stroke smoothscroll" href="#about" title="">More About Me</a>
-
+					<div class="d-flex justify-content-center">
+						<a href="#about" class="button--scroll animation animation--infinite animation--up-down"><svg
+								xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+								viewBox="-275 398.7 44.2 44.2">
+								<path fill="#111111"
+									d="M-275 420.8c0-12.2 9.9-22.1 22.1-22.1s22.1 9.9 22.1 22.1c0 12.2-9.9 22.1-22.1 22.1s-22.1-9.9-22.1-22.1zm42.7 0c0-11.4-9.2-20.6-20.6-20.6-11.4 0-20.6 9.2-20.6 20.6 0 11.4 9.2 20.6 20.6 20.6 11.4 0 20.6-9.3 20.6-20.6zM-260.6 418c0-.2.1-.4.2-.5.3-.3.8-.3 1.1 0l6.8 6.8 6.8-6.8c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-7.3 7.3c-.3.3-.8.3-1.1 0l-7.3-7.3c-.3-.2-.3-.4-.3-.6z" />
+							</svg></a>
+					</div>
 				</div>
-
 			</div>
 		</div> <!-- /intro-content -->
 
-		<ul class="intro-social">
+		<ul class="intro-social d-none d-md-flex">
 			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-			<li><a href="#"><i class="fa fa-behance"></i></a></li>
-			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
 			<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
 			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
 		</ul> <!-- /intro-social -->
@@ -132,7 +142,7 @@
 		<div class="row section-intro">
 			<div class="col-twelve">
 
-				<h2>À propos</h2>
+				<h2>À PROPOS</h2>
 
 				<div class="intro-info">
 
@@ -142,33 +152,20 @@
 						eiusmod ad do aliqua occaecat nisi ad irure sunt id pariatur Duis laboris amet exercitation
 						veniam labore consectetur ea id quis eiusmod.</p>
 				</div>
-
 			</div>
 		</div> <!-- /section-intro -->
-
-
-
-		<div class="row customise-row button-section">
-			<div class="col-twelve">
-				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
-			</div>
-		</div>
-
 	</section> <!-- /process-->
 
-
-	<!-- resume Section
+	<!-- techno Section
    ================================================== -->
-	<section id="resume" class="grey-section">
-
-
+	<section id="techno">
 		<div class="row customise-row about-content">
-			<div class="col-12">
-				<h2>Les technologies</h2>
+			<div class="col-12 d-flex justify-content-center">
+				<h2>COMPÉTENCES TECHNIQUES</h2>
 			</div>
-			<div class="col-12 col-md-3">
-				<h4>Front-end</h4>
-				<ul>
+			<div class="col-12 col-md-6 wow fadeInLeft">
+				<h4><i class="fas fa-code"></i> Front-end</h4>
+				<ul class="list-techno">
 					<li>
 						<i class="devicon-html5-plain"> HTML5</i>
 					</li>
@@ -184,19 +181,25 @@
 					<li>
 						<i class="devicon-angularjs-plain"> Angular</i>
 					</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-3">
-				<h4>CMS</h4>
-				<ul>
 					<li>
 						<i class="devicon-wordpress-plain"> WordPress</i>
 					</li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-3">
-				<h4>Back-end​</h4>
-				<ul>
+			<div class="col-12 col-md-6 wow fadeInLeft">
+				<h4><i class="fas fa-palette"></i> Design</h4>
+				<ul class="list-techno">
+					<li>
+						<i class="fas fa-brain"></i> UI/UX design</i>
+					</li>
+					<li>
+						<i class="fab fa-figma"></i> Figma</i>
+					</li>
+				</ul>
+			</div>
+			<div class="col-12 col-md-6 wow fadeInLeft">
+				<h4><i class="fas fa-database"></i> Back-end​</h4>
+				<ul class="list-techno">
 					<li>
 						<i class="devicon-linux-plain"> Linux</i>
 					</li>
@@ -214,9 +217,12 @@
 					</li>
 				</ul>
 			</div>
-			<div class="col-12 col-md-3">
-				<h4>Gestion de projet</h4>
-				<ul>
+			<div class="col-12 col-md-6 wow fadeInLeft">
+				<h4><i class="fas fa-desktop"></i> Gestion de projet</h4>
+				<ul class="list-techno">
+					<li>
+						<i class="fas fa-tasks"></i> Méthodes agiles
+					</li>
 					<li>
 						<i class="devicon-git-plain"> Git</i>
 					</li>
@@ -226,18 +232,27 @@
 					<li>
 						<i class="devicon-trello-plain"> Trello</i>
 					</li>
+					<li>
+						<i class="devicon-slack-plain"> Slack</i>
+					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="row customise-row resume-timeline">
+	</section><!-- /process-->
 
+
+	<!-- resume Section
+   ================================================== -->
+	<section id="resume">
+
+		<div class="row customise-row resume-timeline">
 			<div class="col-twelve resume-header">
 
-				<h2>Work Experience</h2>
+				<h2>EXPÉRIENCES PROFESSIONNELES</h2>
+				<p>Les 3 plus récentes</p>
 
 			</div> <!-- /resume-header -->
-
-			<div class="col-twelve">
+			<div class="col-12 col-md-9">
 
 				<div class="timeline-wrap">
 
@@ -248,16 +263,18 @@
 						</div>
 
 						<div class="timeline-header">
-							<h3>UI Designer</h3>
-							<p>July 2015 - Present</p>
+							<h3>Développeur web (stage)</h3>
+							<p>Mars 2020</p>
 						</div>
 
 						<div class="timeline-content">
-							<h4>Awesome Studio</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi.</p>
+							<h4>
+								<a href="https://baltazare.fr/">Agence Baltazare - Paris</a>
+							</h4>
+							<li>Création de template Wordpress</li>
+							<li>Intégration d'animations jQuery / CSS </li>
+							<li>Mise à jour et optimisation du code source</li>
+							<li>Adaptation de site desktop vers mobile (responsive)</li>
 						</div>
 
 					</div> <!-- /timeline-block -->
@@ -269,16 +286,18 @@
 						</div>
 
 						<div class="timeline-header">
-							<h3>Front-end Developer</h3>
-							<p>July 2014 - June 2015</p>
+							<h3>Chef d'entreprise</h3>
+							<p>Janv. 2017 - Août 2019 (2 ans et 8 mois)</p>
 						</div>
 
 						<div class="timeline-content">
-							<h4>Super Cool Agency</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi incididunt.</p>
+							<h4>JM's HIM - Marseille</h4>
+							<li>Marketing</li>
+							<li>Développement de marque sur les réseaux sociaux</li>
+							<li>Maintenance d'un site sur Shopify</li>
+							<li>Gestion du stock</li>
+							<li>SAV client et fournisseur</li>
+							<li>Gestion de projets</li>
 						</div>
 
 					</div> <!-- /timeline-block -->
@@ -290,104 +309,119 @@
 						</div>
 
 						<div class="timeline-header">
-							<h3>Web Designer</h3>
-							<p>May 2013 - June 2014</p>
+							<h3>Manager en restauration</h3>
+							<p>Mai 2019 - Août 2019 (4 mois)</p>
 						</div>
 
 						<div class="timeline-content">
-							<h4>Great Designs Studio</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi incididunt.</p>
+							<h4>L'escalié - Marseille</h4>
+							<li>Gestion du personnel</li>
+							<li>Gestion de caisse</li>
+							<li>Formation des nouveaux arrivants</li>
+							<li>Relation clientèle</li>
 						</div>
 
 					</div> <!-- /timeline-block -->
 
 				</div> <!-- /timeline-wrap -->
-
-			</div> <!-- /col-twelve -->
+			</div>
+			<div class="col-md-3">
+				<img src="images/work.png" alt="">
+			</div>
 
 		</div> <!-- /resume-timeline -->
 
 		<div class="row customise-row resume-timeline">
+			<div class="col-md-3">
+				<img src="images/grade.png" alt="">
+			</div>
+			<div class="col-12 col-md-9">
+				<div class="col-twelve resume-header">
 
-			<div class="col-twelve resume-header">
+					<h2>FORMATION</h2>
 
-				<h2>Education</h2>
+				</div> <!-- /resume-header -->
 
-			</div> <!-- /resume-header -->
+				<div class="col-twelve">
 
-			<div class="col-twelve">
+					<div class="timeline-wrap">
 
-				<div class="timeline-wrap">
+						<div class="timeline-block">
 
-					<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-briefcase"></i>
+							</div>
 
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
+							<div class="timeline-header">
+								<h3>Développeur web full-stack</h3>
+								<p>Sept 2019 - Mai 2020 (8 mois)</p>
+							</div>
 
-						<div class="timeline-header">
-							<h3>Master Degree</h3>
-							<p>July 2015 - Present</p>
-						</div>
+							<div class="timeline-content">
+								<h4>
+									<a href="https://passerelle-numerique.fr/la-formation/">Passerelle Numérique
+										- Centrale
+										Marseille</a>
+								</h4>
+								<li>Gestion de projet</li>
+								<li>Création d'une page d'accueil d'un e-commerce</li>
+								<li>Design d'application</li>
+								<li>Création de base de donnée</li>
+								<li>Médiation numérique</li>
+								<li>Participation aux évènements :  Devops D-Day, Le Grand Bain...</li>
+							</div>
 
-						<div class="timeline-content">
-							<h4>University of Life</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi.</p>
-						</div>
+						</div> <!-- /timeline-block -->
 
-					</div> <!-- /timeline-block -->
+						<div class="timeline-block">
 
-					<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-briefcase"></i>
+							</div>
 
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
+							<div class="timeline-header">
+								<h3>Garçon de restaurant</h3>
+								<p>Sept 2011 - Fév. 2012 (6 mois)</p>
+							</div>
 
-						<div class="timeline-header">
-							<h3>Bachelor Degree</h3>
-							<p>July 2014 - June 2015</p>
-						</div>
+							<div class="timeline-content">
+								<h4>AFPA - Istres</h4>
+								<li>Gestion clientèle</li>
+								<li>Encaissement</li>
+								<li>Gestion d'un service</li>
+							</div>
 
-						<div class="timeline-content">
-							<h4>State Design University</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi incididunt.</p>
-						</div>
+						</div> <!-- /timeline-block -->
 
-					</div> <!-- /timeline-block -->
+						<div class="timeline-block">
 
-					<div class="timeline-block">
+							<div class="timeline-ico">
+								<i class="fa fa-briefcase"></i>
+							</div>
 
-						<div class="timeline-ico">
-							<i class="fa fa-briefcase"></i>
-						</div>
+							<div class="timeline-header">
+								<h3>BEP comptabilité</h3>
+								<p>Sept 2009 - Déc 2010</p>
+							</div>
 
-						<div class="timeline-header">
-							<h3>Bachelor Degree</h3>
-							<p>May 2013 - June 2014</p>
-						</div>
+							<div class="timeline-content">
+								<h4>Lycée Maurice Genevoix - Marignane</h4>
+								<li>Gestion d'une trésorerie</li>
+								<li>Marketing</li>
+								<li>Relation fournisseur</li>
+								<li>Relation client</li>
+								<li>Tenu de compte</li>
+							</div>
 
-						<div class="timeline-content">
-							<h4>Design College</h4>
-							<p>Lorem ipsum Occaecat do esse ex et dolor culpa nisi ex in magna consectetur nisi
-								cupidatat laboris esse eiusmod deserunt aute do quis velit esse sed Ut proident
-								cupidatat nulla esse cillum laborum occaecat nostrud sit dolor incididunt amet est
-								occaecat nisi incididunt.</p>
-						</div>
+						</div> <!-- /timeline-block -->
 
-					</div> <!-- /timeline-block -->
+					</div> <!-- /timeline-wrap -->
 
-				</div> <!-- /timeline-wrap -->
+				</div> <!-- /col-twelve -->
+			</div>
 
-			</div> <!-- /col-twelve -->
+
+
 
 		</div> <!-- /resume-timeline -->
 
@@ -654,435 +688,19 @@
 	</section> <!-- /portfolio -->
 
 
-	<!-- CTA Section
-   ================================================== -->
-	<section id="cta" class="grey-section">
-
-		<div class="row customise-row cta-content">
-
-			<div class="col-twelve section-ads">
-
-				<h2 class="h01"><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Styleshout Recommends
-						Dreamhost.</a></h2>
-
-				<p class="lead">
-					Looking for an awesome and reliable webhosting? Try <a
-						href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-					Get <span>$50 off</span> when you sign up with the promocode <span>styleshout</span>.
-					<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. -->
-				</p>
-
-				<div class="action">
-					<a class="button button-primary large" href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Sign
-						Up Now</a>
-				</div>
-
-			</div>
-
-		</div> <!-- /cta-content -->
-
-	</section> <!-- /cta -->
-
-
-	<!-- services Section
-   ================================================== -->
-	<section id="services">
-
-		<div class="overlay"></div>
-
-		<div class="row customise-row section-intro">
-			<div class="col-twelve">
-
-				<h5>Services</h5>
-				<h1>What Can I Do For You?</h1>
-
-				<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia
-					nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row customise-row services-content">
-
-			<div id="owl-slider" class="owl-carousel services-list">
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-earth"></i></span>
-
-					<div class="service-content">
-
-						<h3>Webdesign</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-window"></i></span>
-
-					<div class="service-content">
-
-						<h3>Web Development</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-paint-brush"></i></span>
-
-					<div class="service-content">
-
-						<h3>Branding</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-toggles"></i></span>
-
-					<div class="service-content">
-
-						<h3>UI/UX Design</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-image"></i></span>
-
-					<div class="service-content">
-
-						<h3>Graphics Design</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-				<div class="service">
-
-					<span class="icon"><i class="icon-chat"></i></span>
-
-					<div class="service-content">
-
-						<h3>Consultancy</h3>
-
-						<p class="desc">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-							doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
-							quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas
-							sit aspernatur aut odit aut fugit.
-						</p>
-
-					</div>
-
-				</div> <!-- /service -->
-
-			</div> <!-- /services-list -->
-
-		</div> <!-- /services-content -->
-
-	</section> <!-- /services -->
-
-
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-
-		<div class="row customise-row">
-			<div class="col-twelve">
-
-				<div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-pencil-ruler"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1500
-						</h3>
-
-						<h5 class="stat-title">
-							Projects Completed
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-users"></i>
-						</div>
-
-						<h3 class="stat-count">
-							900
-						</h3>
-
-						<h5 class="stat-title">
-							Happy Clients
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-badge"></i>
-						</div>
-
-						<h3 class="stat-count">
-							200
-						</h3>
-
-						<h5 class="stat-title">
-							Awards Received
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-light-bulb"></i>
-						</div>
-
-						<h3 class="stat-count">
-							120
-						</h3>
-
-						<h5 class="stat-title">
-							Crazy Ideas
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-cup"></i>
-						</div>
-
-						<h3 class="stat-count">
-							1500
-						</h3>
-
-						<h5 class="stat-title">
-							Coffee Cups
-						</h5>
-
-					</div> <!-- /stat -->
-
-					<div class="bgrid stat">
-
-						<div class="icon-part">
-							<i class="icon-clock"></i>
-						</div>
-
-						<h3 class="stat-count">
-							7200
-						</h3>
-
-						<h5 class="stat-title">
-							Hours
-						</h5>
-
-					</div> <!-- /stat -->
-
-				</div> <!-- /stats-list -->
-
-			</div> <!-- /twelve -->
-		</div> <!-- /row customise-row -->
-
-	</section> <!-- /stats -->
-
-
-	<!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row customise-row section-intro">
-			<div class="col-twelve">
-
-				<h5>Contact</h5>
-				<h1>I'd Love To Hear From You.</h1>
-
-				<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia
-					nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
-			</div>
-		</div> <!-- /section-intro -->
-
-		<div class="row customise-row contact-form">
-
-			<div class="col-twelve">
-
-				<!-- form -->
-				<form name="contactForm" id="contactForm" method="post" action="">
-					<fieldset>
-
-						<div class="form-field">
-							<input name="contactName" type="text" id="contactName" placeholder="Name" value=""
-								minlength="2" required="">
-						</div>
-						<div class="form-field">
-							<input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
-								required="">
-						</div>
-						<div class="form-field">
-							<input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-						</div>
-						<div class="form-field">
-							<textarea name="contactMessage" id="contactMessage" placeholder="message" row
-								customise-rows="10" cols="50" required=""></textarea>
-						</div>
-						<div class="form-field">
-							<button class="submitform">Submit</button>
-							<div id="submit-loader">
-								<div class="text-loader">Sending...</div>
-								<div class="s-loader">
-									<div class="bounce1"></div>
-									<div class="bounce2"></div>
-									<div class="bounce3"></div>
-								</div>
-							</div>
-						</div>
-
-					</fieldset>
-				</form> <!-- Form End -->
-
-				<!-- contact-warning -->
-				<div id="message-warning">
-				</div>
-				<!-- contact-success -->
-				<div id="message-success">
-					<i class="fa fa-check"></i>Your message was sent, thank you!<br>
-				</div>
-
-			</div> <!-- /col-twelve -->
-
-		</div> <!-- /contact-form -->
-
-		<div class="row customise-row contact-info">
-
-			<div class="col-four tab-full">
-
-				<div class="icon">
-					<i class="icon-pin"></i>
-				</div>
-
-				<h5>Where to find me</h5>
-
-				<p>
-					1600 Amphitheatre Parkway<br>
-					Mountain View, CA<br>
-					94043 US
-				</p>
-
-			</div>
-
-			<div class="col-four tab-full collapse">
-
-				<div class="icon">
-					<i class="icon-mail"></i>
-				</div>
-
-				<h5>Email Me At</h5>
-
-				<p>someone@kardswebsite.com<br>
-					info@kardswebsite.com
-				</p>
-
-			</div>
-
-			<div class="col-four tab-full">
-
-				<div class="icon">
-					<i class="icon-phone"></i>
-				</div>
-
-				<h5>Call Me At</h5>
-
-				<p>Phone: (+63) 555 1212<br>
-					Mobile: (+63) 555 0100<br>
-					Fax: (+63) 555 0101
-				</p>
-
-			</div>
-
-		</div> <!-- /contact-info -->
-
-	</section> <!-- /contact -->
-
-
 	<!-- footer
    ================================================== -->
 
 	<footer>
-		<div class="row customise-row">
-
-			<div class="col-six tab-full pull-right social">
-
-				<ul class="footer-social">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-behance"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-				</ul>
-
-			</div>
-
-			<div class="col-eight tab-full">
-				<div class="copyright">
-					<span>© Copyright 2018 </span>
-					<span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
-					<span>Distributed by <a href="https://themewagon.com/">themewagon</a></span>
-				</div>
-			</div>
-
-		</div> <!-- /row customise-row -->
+		<div class="copyright">
+			<span>© Copyright 2020</span>
+			<span>Design by <a href="https://github.com/maddaj">maddaj</a></span>
+		</div>
 	</footer>
 
 	<!-- Script
    ================================================== -->
+
 	<script src="js/glitch-effect.js"></script>
 	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
 		integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -1093,6 +711,15 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
 		crossorigin="anonymous"></script>
+	<script src="js/nav.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script>new WOW({
+			boxClass: 'wow',
+			animateClass: 'animated',
+			offset: 0,
+			mobile: true,
+			live: true
+		}).init();</script>
 
 </body>
 
