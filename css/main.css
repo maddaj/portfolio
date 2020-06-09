@@ -1292,8 +1292,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-left: -30px;
 }
 .intro-info img {
-	height: 15rem;
-	width: 15rem;
+	height: 20rem;
+	width: 20rem;
 	border-radius: 50%;
 	margin-right: 5rem;
 	float: left;
@@ -2409,6 +2409,14 @@ svg {
 	100% {
 	  transform: translateY(-15px);
 	}
+  }
+
+  .col-grade, .col-img-work{
+	align-self: center;
+  }
+
+  .img-grade{
+	height: 500px;
   }
 
 /*# sourceMappingURL=main.css.map */
