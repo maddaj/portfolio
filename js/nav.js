@@ -28,7 +28,7 @@ const init = () => {
         let next = false;
 
         sections.forEach(section => {
-            const current = link(sectin.id);
+            const current = link(section.id);
 
             if (inView(section) && !next) {
                 current.classList.add('current');
