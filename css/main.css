@@ -1007,55 +1007,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	}
 }
 
-/* navigation panel */
-#main-nav-wrap {
-	display: block;
-	width: 100%;
-	font-family: "poppins-medium", sans-serif;
-	font-size: 1.5rem;
-	position: absolute;
-	top: 100%;
-	left: 0;
-}
-
-#navbarNavAltMarkup{
-	justify-content: center;
-	font-size: large;
-}
-
-/* dropdown nav */
-.main-navigation {
-	background: #000000;
-	padding: 24px 30px 42px;
-	margin: 0;
-	width: 100%;
-	height: auto;
-	clear: both;
-	display: none;
-}
-.main-navigation > li {
-	display: block;
-	height: auto;
-	text-align: left;
-	padding: 0;
-}
-.main-navigation li a {
-	display: block;
-	color: #FFFFFF;
-	width: auto;
-	padding: 15px 0;
-	line-height: 16px;
-	border: none;
-}
-.main-navigation li a:hover {
-	color: #f26b38;
-	padding-left: 1rem;
-}
-.main-navigation li.current > a {
-	background: none;
-	color: #f26b38;
-}
-
 /**
  * responsive:
  * header styles
@@ -1435,7 +1386,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 #resume .timeline-wrap {
 	position: relative;
 	margin-top: 1.5rem;
-	margin-bottom: 6rem;
+	margin-bottom: 1.5rem;
 }
 #resume .timeline-wrap::before {
 	content: "";
@@ -2324,6 +2275,10 @@ footer .copyright span:last-child::after {
  * -------------------------------------------------------------------
  */
 @media only screen and (max-width:768px) {
+	.nav-icon{
+		display: flex;
+		justify-content: center;
+	}
 	footer {
 		text-align: center;
 	}
@@ -2417,6 +2372,181 @@ svg {
 
   .img-grade{
 	height: 500px;
+  }
+
+  /* ::::::::::::::::: NAV //////  */
+  html{
+	  scroll-behavior: smooth;
+  }
+
+  .navbar-nav{
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.nav-icon, .nav-download{
+	display: none;
+	margin: 0;
+}
+
+.nav-icon li{
+	margin: 0 15px;
+	list-style: none;
+}
+.nav-icon-display, .nav-download-display{
+	display: flex;
+}
+.button-download{
+	background-color: white;
+	color: black;
+	border: 2px solid black;
+	border-radius: 3px;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+ }
+  nav .navbar-nav a, nav ul li{
+	  text-decoration: none;
+	  transition: opacity 200ms ease-in-out;
+	  overflow: hidden;
+	  font-size: large;
+  }
+  nav .navbar-nav a{
+	  padding-left: 20px;
+	  padding-right: 20px;
+  }
+  nav .navbar-nav a::after{
+	  content: '';
+	  display: block;
+	  width: 0%;
+	  height: 3px;
+	  margin-top: 3px;
+	  border-radius: 3px;
+	  background-color: #f26b38;
+	  transition: width .2sc ease-in-out;
+  }
+  nav .navbar-nav a.current::after{
+	  width: 100%;
+  }
+  nav.navbar-nav  a:hover::after{
+	width: 100%;
+}
+
+/* ////////////////: PORTFOLIO /////////  */
+.site-section {
+	padding: 4.5em 0;
+}
+.section-title .sub-title {
+font-size: 1rem;
+text-transform: uppercase;
+letter-spacing: .2rem;
+font-weight: 400;
+color: #b3b3b3;
+}
+
+.section-title .title {
+font-size: 2.2rem;
+}
+.jm-sticky-top {
+	position: -webkit-sticky;
+	position: sticky;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	top: 7em;
+	margin-bottom: 5em;
+}
+
+.span-techno, .project-type{
+	font-size: initial;
+    color: gray;
+}
+
+.project-name{
+	font-size: large;
+}
+
+.project-description{
+	font-size: medium;
+}
+
+.btn-arrow {
+	position: relative;
+	text-decoration: none;
+	color: black;
+	font-size: small;
+	text-transform: uppercase;
+}
+
+.btn-arrow:before, 
+.btn-arrow > span:before {
+	content: '';
+	position: absolute;
+	width: 0px;
+	height: 1px;
+	background-color: black;
+	left: 0;
+	top: 50%;	
+}
+
+  .btn-arrow:after, 
+  .btn-arrow > span:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 1px;
+	left: 55px;
+	top: 50%;
+	width: 7px;
+	height: 7px;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	transform: rotate(135deg) translateY(5px);
+  }
+  .btn-arrow:before,
+  .btn-arrow:after {
+	transition: all 0.2s;
+  }
+  .btn-arrow:after {
+	opacity: 0;
+  }
+  .btn-arrow > span {
+	display: inline-block;
+	position: relative;
+	transition: all 0.2s;
+  }
+  .btn-arrow > span:before {
+	transition: all 0.2s;
+  }
+  .btn-arrow > span:before {
+	width: 60px;
+	left: calc(100% + 10px);
+  }
+  .btn-arrow > span:after {
+	left: calc(100% + 65px);
+  }
+  
+  .btn-arrow:hover > span {
+	transform: translateX(70px);
+  }
+  .btn-arrow:hover:before,
+  .btn-arrow:hover:after {
+	transition-delay: 0.2s;
+  }
+  .btn-arrow:hover:before {
+	width: 60px;
+  }
+  .btn-arrow:hover:after {
+	opacity: 1; 
+	transition-delay: 0.3s;
+  }
+  .btn-arrow:hover span:before {
+   transition-delay: 0.1s;
+  }
+  .btn-arrow:hover span:before {
+	width: 0px;
+  }
+  .btn-arrow:hover span:after {
+	opacity: 0;
   }
 
 /*# sourceMappingURL=main.css.map */

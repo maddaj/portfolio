@@ -857,22 +857,4 @@ textarea {
 	text-align: center;
 }
 
-.navbar-nav{
-	margin-left: auto;
-    margin-right: auto;
-}
-
-.nav-icon, .nav-download{
-	display: none;
-	list-style: none;
-	margin: 0;
-}
-
-.nav-icon li{
-	margin: 0 15px;
-}
-.nav-icon-display, .nav-download-display{
-	display: flex;
-}
-
 /*# sourceMappingURL=base.css.map */

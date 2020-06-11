@@ -10,7 +10,7 @@
 	<!--- basic page needs
    ================================================== -->
 	<meta charset="utf-8">
-	<title>John Maddalena</title>
+	<title>Portfolio - John Maddalena</title>
 	<meta name="description" content="">
 	<meta name="author" content="">
 
@@ -26,7 +26,7 @@
 	<link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- favicons
@@ -63,6 +63,7 @@
 		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 	<link rel="stylesheet"
 		href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 
 
 
@@ -81,17 +82,17 @@
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-				<!-- <ul class="nav-download">
+				<ul class="nav-icon button-download">
 					<li>
-						<a href="#">Download CV</a>
-
+						<a href="#" class="btn-download">Download CV</a>
 					</li>
-				</ul> -->
+
+				</ul>
 				<div class="navbar-nav">
-					<a class="nav-item nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-					<a class="nav-item nav-link" href="#about" title="">About</a>
-					<a class="nav-item nav-link" href="#resume" title="">Resume</a>
-					<a class="nav-item nav-link" href="#portfolio" title="">Portfolio</a>
+					<a class="" href="#">Home</a>
+					<a class="" href="#about" title="">About</a>
+					<a class="" href="#resume" title="">Resume</a>
+					<a class="" href="#portfolio" title="">Portfolio</a>
 				</div>
 				<ul class=" nav-icon">
 					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -155,90 +156,142 @@
 				</div>
 			</div>
 		</div> <!-- /section-intro -->
+		<div class="row">
+			<div class="col-twelve d-flex justify-content-center">
+				<a href="#" title="Download CV" class="button button-primary">Download CV</a>
+			</div>
+		</div>
 	</section> <!-- /process-->
 
 	<!-- techno Section
    ================================================== -->
-	<section id="techno">
-		<div class="row customise-row about-content">
-			<div class="col-12 d-flex justify-content-center">
-				<h2>COMPÉTENCES TECHNIQUES</h2>
-			</div>
-			<div class="col-12 col-md-6 wow fadeInLeft">
-				<h4><i class="fas fa-code"></i> Front-end</h4>
-				<ul class="list-techno">
-					<li>
-						<i class="devicon-html5-plain"> HTML5</i>
-					</li>
-					<li>
-						<i class="devicon-css3-plain"> CSS3</i>
-					</li>
-					<li>
-						<i class="devicon-bootstrap-plain"> Bootstrap</i>
-					</li>
-					<li>
-						<i class="devicon-javascript-plain"> JavaScript</i>
-					</li>
-					<li>
-						<i class="devicon-angularjs-plain"> Angular</i>
-					</li>
-					<li>
-						<i class="devicon-wordpress-plain"> WordPress</i>
-					</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 wow fadeInLeft">
-				<h4><i class="fas fa-palette"></i> Design</h4>
-				<ul class="list-techno">
-					<li>
-						<i class="fas fa-brain"></i> UI/UX design</i>
-					</li>
-					<li>
-						<i class="fab fa-figma"></i> Figma</i>
-					</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 wow fadeInLeft">
-				<h4><i class="fas fa-database"></i> Back-end​</h4>
-				<ul class="list-techno">
-					<li>
-						<i class="devicon-linux-plain"> Linux</i>
-					</li>
-					<li>
-						<i class="devicon-mysql-plain"> MySQL</i>
-					</li>
-					<li>
-						<i class="devicon-mongodb-plain"> MongoDB</i>
-					</li>
-					<li>
-						<i class="devicon-nodejs-plain"> Node.js</i>
-					</li>
-					<li>
-						<i class="devicon-php-plain"> PHP</i>
-					</li>
-				</ul>
-			</div>
-			<div class="col-12 col-md-6 wow fadeInLeft">
-				<h4><i class="fas fa-desktop"></i> Gestion de projet</h4>
-				<ul class="list-techno">
-					<li>
-						<i class="fas fa-tasks"></i> Méthodes agiles
-					</li>
-					<li>
-						<i class="devicon-git-plain"> Git</i>
-					</li>
-					<li>
-						<i class="devicon-github-plain"> Github</i>
-					</li>
-					<li>
-						<i class="devicon-trello-plain"> Trello</i>
-					</li>
-					<li>
-						<i class="devicon-slack-plain"> Slack</i>
-					</li>
-				</ul>
+	<section id="techno" style="background-color: #eee">
+		<div class="container">
+			<div class="row services">
+				<div class="col-lg-12">
+					<h2 class="heading">Compétences</h2>
+					<!-- Front-end -->
+					<div class="row justify-content-between">
+						<div class="col-md-6">
+							<h4 class="text-center mt-5 mb-3">Front-end</h4>
+							<div class="row text-center d-flex" style="background-color: #fff">
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-html5-plain"></i></i></div>
+										<h6>HTML/CSS</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-bootstrap-plain"></i></div>
+										<h6>Bootstrap</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"> <i class="devicon-javascript-plain"></i></div>
+										<h6>Javascript</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-angularjs-plain"></i></div>
+										<h6>Angular</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<!-- Back-end -->
+						<div class="col-md-6">
+							<h4 class="text-center mt-5 mb-3">Back-end</h4>
+							<div class="row text-center d-flex justify-content-center" style="background-color: #fff">
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-nodejs-plain"></i></div>
+										<h6>NodeJS</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-php-plain"></i></div>
+										<h6>PHP</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-mongodb-plain"></i></div>
+										<h6>MongoDB</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-mysql-plain"></i></div>
+										<h6>MySQL</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+
+					<div class="row justify-content-between">
+						<div class="col-md-6">
+							<!-- Gestion de projet-->
+							<h4 class="text-center mt-5 mb-3">Gestion de projet</h4>
+							<div class="row text-center d-flex justify-content-center" style="background-color: #fff">
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-git-plain"></i></div>
+										<h6>Git</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-github-plain"></i></div>
+										<h6>GitHub</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-trello-plain"></i></div>
+										<h6>Trello</h6>
+									</div>
+								</div>
+							</div>
+						</div>
+						<br>
+						<div class="col-md-6">
+							<!-- Autres-->
+							<h4 class="text-center mt-5 mb-3">Autres</h4>
+
+							<div class="row text-center d-flex justify-content-center" style="background-color: #fff">
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-linux-plain"></i></div>
+										<h6>Unix</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="devicon-wordpress-plain"></i></div>
+										<h6>Wordpress</h6>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="box">
+										<div class="icon"><i class="fab fa-figma"></i></div>
+										<h6>Figma</h6>
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
+
 	</section><!-- /process-->
 
 
@@ -254,6 +307,7 @@
 
 			</div> <!-- /resume-header -->
 			<div class="col-12 col-md-9">
+
 
 				<div class="timeline-wrap">
 
@@ -325,6 +379,9 @@
 					</div> <!-- /timeline-block -->
 
 				</div> <!-- /timeline-wrap -->
+
+
+
 			</div>
 			<div class="col-md-3 col-img-work">
 				<img src="images/work.png" alt="">
@@ -342,11 +399,8 @@
 				<img src="images/grade.png" class="img-grade" alt="">
 			</div>
 			<div class="col-12 col-md-9 col-grade">
-
 				<div class="col-twelve">
-
 					<div class="timeline-wrap">
-
 						<div class="timeline-block">
 
 							<div class="timeline-ico">
@@ -433,7 +487,7 @@
    ================================================== -->
 	<section id="portfolio">
 
-		<div class="row customise-row section-intro">
+		<!-- <div class="row customise-row section-intro">
 			<div class="col-twelve">
 
 				<h5>Portfolio</h5>
@@ -443,248 +497,63 @@
 					nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
 
 			</div>
-		</div> <!-- /section-intro-->
-
-		<div class="row customise-row portfolio-content">
-
-			<div class="col-twelve">
-
-				<!-- portfolio-wrapper -->
-				<div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/liberty.jpg" alt="Liberty">
-							<a href="#modal-01" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Liberty</h3>
-										<span class="folio-types">
-											Graphic Design
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/shutterbug.jpg" alt="Shutterbug">
-							<a href="#modal-02" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Shutterbug</h3>
-										<span class="folio-types">
-											Web Design
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/clouds.jpg" alt="Clouds">
-							<a href="#modal-03" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Clouds</h3>
-										<span class="folio-types">
-											Web Design
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/beetle.jpg" alt="Beetle">
-							<a href="#modal-04" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Beetle</h3>
-										<span class="folio-types">
-											Branding
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/lighthouse.jpg" alt="Lighthouse">
-							<a href="#modal-05" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Lighthouse</h3>
-										<span class="folio-types">
-											Web Development
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<div class="bgrid folio-item">
-						<div class="item-wrap">
-							<img src="images/portfolio/salad.jpg" alt="Salad">
-							<a href="#modal-06" class="overlay">
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Salad</h3>
-										<span class="folio-types">
-											Branding
-										</span>
-									</div>
-								</div>
-							</a>
-						</div>
-					</div> <!-- /folio-item -->
-
-					<!-- modal popups - begin
-	            ============================================================= -->
-					<div id="modal-01" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-liberty.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Liberty</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Web Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-01 -->
-
-					<div id="modal-02" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Shutterbug</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Web Design</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-02 -->
-
-					<div id="modal-03" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-clouds.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Clouds</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Web Design</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-03 -->
-
-					<div id="modal-04" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-beetle.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Beetle</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Branding</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-04 -->
-
-					<div id="modal-05" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Lighthouse</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Web Development</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-05 -->
-
-					<div id="modal-06" class="popup-modal slider mfp-hide">
-
-						<div class="media">
-							<img src="images/portfolio/modals/m-salad.jpg" alt="" />
-						</div>
-
-						<div class="description-box">
-							<h4>Salad</h4>
-							<p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum
-								auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
-							<div class="categories">Branding</div>
-						</div>
-
-						<div class="link-box">
-							<a href="http://www.behance.net">Details</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>
-
-					</div> <!-- /modal-06 -->
+		</div>  -->
+		<div class="site-section" id="portfolio">
+			<div class="container">
+				<div class="row customise-row section-intro ">
+					<div class="col-twelve">
+						<h2>PORTFOLIO</h2>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-6 mb-4 mb-lg-0">
+						<img src="images/portfolio/poster-wheeler.png" alt="Image" class="img-fluid">
+					</div>
+					<div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+						<span class="span-techno">#Figma</span>
+						<h6 class="project-name">Wheeler</h6>
+						<p class="project-type">Design d'application</p>
+						<p class="project-description">Chez WHEELER, l’objectif est de créer une expérience sociale et
+							rentable autour d’une
+							application qui permet de mettre en relation les propriétaires de moto cross et les
+							passionnés qui n’ont pas forcément les moyens financiers ou un lieu approprié pour en
+							posséder une ; ce qui permettrait aussi aux propriétaires d’arrondir ses fins de mois d’une
+							nouvelle façon.</p>
+						<a href="/" class="btn-arrow"><span>Découvrir le projet</span></a>
+					</div>
+				</div>
+				<div class="row mb-5">
+					<div class="col-lg-5 h-100 jm-sticky-top ml-auto">
+						<span class="span-techno">#HTML #CSS</span>
+						<h6 class="project-name">C.Gatto</h6>
+						<p class="project-type">Page d'accueil d'une pâtisserie haut de gamme</p>
+						<p class="project-description">Imaginons une pâtissière qui se nommerait C.Gatto... <br><br> À
+							travers cette page d'accueil un esprit de joaillerie a été donné pour mettre en valeur le
+							travail remarquable que les pâtissiers réalisent chaque jour. </p>
+						<a href="/" class="btn-arrow"><span>Découvrir le projet</span></a>
+					</div>
+					<div class="col-lg-6 mb-4 mb-lg-0">
+						<img src="images/portfolio/poster-web.png" alt="Image" class="img-fluid">
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-					<!-- modal popups - end
-	            ============================================================= -->
 
-				</div> <!-- /portfolio-wrapper -->
+		<!-- <ul class="card-list">
 
-			</div> <!-- /twelve -->
+			<li class="card">
+				<a class="card-image" href="#" target="_blank">
+					<img src="images/portfolio/poster-wheeler.png" />
 
-		</div> <!-- /portfolio-content -->
+					<h6>Design d'application</h6>
+					<p>Wheeler</p>
+					<p>La location de moto cross entre particuliers</p>
+					<p>Figma</p>
+				</a>
+			</li>
+		</ul> -->
 
 	</section> <!-- /portfolio -->
 
@@ -714,13 +583,7 @@
 		crossorigin="anonymous"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/wow.min.js"></script>
-	<script>new WOW({
-			boxClass: 'wow',
-			animateClass: 'animated',
-			offset: 0,
-			mobile: true,
-			live: true
-		}).init();</script>
+	<script>new WOW().init();</script>
 
 </body>
 
