@@ -284,7 +284,7 @@
 }
 .glitch::before {
   left: 2px;
-  text-shadow: -4px 0px #f26b38;
+  text-shadow: -4px 0px #6fb6fc;
   background: white;
   clip: rect(0, 900px, 0, 0);
   animation: noise-anim-2 3s infinite linear alternate-reverse;
@@ -309,7 +309,7 @@
   animation: typing-text 2s steps(20), blink 0.5s infinite alternate;
   overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #f26b38;
+  border-right: 3px solid #6fb6fc;
 }
 
 @keyframes typing-text{
@@ -327,6 +327,6 @@
     border-color: transparent;
   }
   to{
-   border-color: #f26b38;
+   border-color: #6fb6fc;
   }
 }
