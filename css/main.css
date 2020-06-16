@@ -86,7 +86,7 @@ html, body {
     margin-top: 5px;
 }
 
-.line-title:before, .line-title:after{
+.line-title:after{
     margin-left: auto;
     margin-right: auto;
 }
@@ -143,6 +143,7 @@ h1, .h01 {
 h2, .h02 {
 	font-size: 2.4rem;
 	line-height: 1.25;
+	text-align: center;
 }
 h3, .h03 {
 	font-size: 2rem;
@@ -2317,15 +2318,6 @@ svg {
 .nav-icon-display, .nav-download-display{
 	display: flex;
 }
-
- .button-download li{
-	background-color: white;
-    border: solid 1px black;
-    border-radius: 50%;
- }
- .button-download li:hover{
-	background-color: #6fb6fc;
- }
 
   nav .navbar-nav a, nav ul li{
 	  text-decoration: none;
