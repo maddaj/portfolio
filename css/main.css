@@ -67,9 +67,20 @@ html, body {
 	width: 100%;
 }
 
+body{
+	position: relative; 
+	height: auto; 
+	overflow-y: scroll;
+}
+
+.nav .nav-link.active, .nav .show>.nav-link, .nav-link:hover {
+	padding: 0;
+	background-color: transparent;
+	border-bottom: solid 2px #6fb6fc;
+    transition: border-width .2s ease-in-out;
+}
+
 .customise-row {
-	margin-right: 0;
-	margin-left: 0;
 	width: 100%;
 	padding: 3rem;
 }
@@ -81,7 +92,7 @@ html, body {
 .line-title:after{
     display: block;
     width: 90px;
-    height: 3px;
+    height: 2px;
     background: #6fb6fc;
     margin-top: 5px;
 }
@@ -915,8 +926,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * --------------------------------------------------------------- 
  */
 @media screen and (min-width: 1024px){
-	.navbar-expand-lg .navbar-nav .nav-link {
-		padding-right: 4rem;
+	.navbar-expand-lg .navbar-nav .nav-item {
+		padding-right: 2rem;
 	}
 }
 @media only screen and (max-width:1024px) {
@@ -1041,9 +1052,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .intro-social {
-	display: inline-flex;
 	justify-content: flex-end;
-	position: absolute;
 	width: 100%;
 	left: 0;
 	bottom: 7.2rem;
@@ -1276,11 +1285,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- 
  */
-#resume {
-	padding-top: 12rem;
-}
-
-.resume-timeline-grade{
+#work, #graduate, #techno {
 	padding-top: 10em;
 }
 
@@ -1449,7 +1454,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  */
 #portfolio {
 	background: #FFFFFF;
-	padding-top: 12rem;
+	padding-top: 4rem;
 	padding-bottom: 12rem;
 }
 #portfolio .folio-item {
@@ -2491,7 +2496,7 @@ font-size: 2.2rem;
   }
 
   .gif{
-	  width: 80%;
+	  width: 85%;
   }
 
   .color{
@@ -2529,5 +2534,62 @@ font-size: 2.2rem;
   .construct-row{
 	  padding: 350px 0;
   }
+
+  /* ///////// BUTTON */
+  .container-button button{
+cursor: pointer;
+position: relative;
+margin: 20px 0;
+background: transparent;
+height: 60px;
+font-size: 18px;
+letter-spacing: 1px;
+  }
+  .container-button button span{
+	  background: #6fb6fc;
+	  position: absolute;
+	  transition: .3s;
+  }
+  .container-button button span:nth-child(1),
+  .container-button button span:nth-child(3)
+  {
+	  width: 20px;
+	  height: 2px;
+  }
+  .container-button button span:nth-child(2),
+  .container-button button span:nth-child(4){
+	  width: 2px;
+	  height: 20px;
+  }
+  .container-button button span:nth-child(1),
+  .container-button button span:nth-child(2)
+  {
+	top: 0;
+	left: 0;
+  }
+  .container-button button span:nth-child(3),
+  .container-button button span:nth-child(4){
+	  bottom: 0;
+	  right: 0;
+  }
+  .container-button button:hover span:nth-child(1),
+  .container-button button:hover span:nth-child(3)
+{
+	  width: 100%;
+  }
+  .container-button button:hover span:nth-child(2),
+  .container-button button:hover span:nth-child(4)
+  {
+	height: 100%;
+  }
+  .container-button button:nth-child(3):hover span{
+	  box-shadow: 0 0 20px #6fb6fc;
+  }
+  .container-button button:nth-child(3) span{
+	background: #6fb6fc;
+}
+.container-button button:nth-child(3){
+	color: #6fb6fc;
+}
 
 /*# sourceMappingURL=main.css.map */
