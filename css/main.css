@@ -73,6 +73,10 @@ body{
 	overflow-y: scroll;
 }
 
+span{
+	font-weight: 500;
+}
+
 .nav .nav-link.active, .nav .show>.nav-link, .nav-link:hover {
 	padding: 0;
 	background-color: transparent;
@@ -2378,7 +2382,7 @@ font-size: 2.2rem;
 	margin-bottom: 5em;
 }
 
-.span-techno, .project-type{
+.span-techno, .project-type, .project-type-single{
 	font-size: initial;
     color: gray;
 }
@@ -2387,8 +2391,14 @@ font-size: 2.2rem;
 	font-size: large;
 }
 
-.project-description{
-	font-size: medium;
+.project-description li{
+	list-style: none;
+	padding-left: 2em;
+}
+
+.project-description li a, .project-description a{
+	font-weight: 600;
+	text-decoration: none;
 }
 
 .btn-arrow {
@@ -2471,12 +2481,21 @@ font-size: 2.2rem;
 	opacity: 0;
   }
 /* /////////////// SINGLE ///////// */
-.wheeler-container .row{
+.project-description, .wheeler-container p, .desc-process p, .desc-color p{
+	font-size: medium;
+}
+.wheeler-container{
+	padding-top: 5%;
+}
+
+.single-row{
 	padding: 5% 0;
 }
-.wheeler-container .feature-row{
-	padding: 1% 0;
+
+.single-title{
+	padding-bottom: 40px;
 }
+
 .single-header{
 	height: 500px;
 	opacity: 0.3;
@@ -2486,10 +2505,9 @@ font-size: 2.2rem;
 	background-size: cover;
 	background-position: unset;
 }
-.project-type-single{
+.project-title-single, .project-type-single{
 	display: flex;
     justify-content: center;
-    margin-bottom: 3em;
 }
   .description{
 	margin-top: 3rem;
@@ -2529,6 +2547,20 @@ font-size: 2.2rem;
   .desc-color p{
 	  margin-bottom: 0!important;
 	  padding-right: 15px;
+  }
+
+  /* ////// CAROUSSEL */
+
+  .slick-slide{
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .slick-track img{
+	width: 300px;
+	height: 300px;
+	padding: 0 5px;
   }
   /* /////////// CONSTRUCT PAGE */
   .construct-row{
