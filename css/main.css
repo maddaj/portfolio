@@ -2655,9 +2655,23 @@ letter-spacing: 1px;
 }
 
 /* Subtitle exp */
-.resume-header .subtitle-exp{
+.resume-header .subtitle-exp, .legende{
     font-size: 1.4rem;
     color: #888888;
 }
 
+.img-maq-wheeler img{
+	width: auto;
+	height: 400px;
+}
+
+.caroussel-wheeler a{
+text-decoration: none;
+}
+
+.caroussel-wheeler .legende{
+	margin-bottom: 0.5rem;
+	font-size: small;
+	text-align: center;
+}
 /*# sourceMappingURL=main.css.map */

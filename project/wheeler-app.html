@@ -159,57 +159,58 @@
             </div>
         </div>
         <!-- Mockup row -->
-        <section class="container-fluid single-row" id="wireframes">
+        <section class="container single-row" id="models">
             <div class="single-title">
-                <h2 class="line-title">Wireframes & userflow</h2>
+                <h2 class="line-title">Maquettes haute fidélité</h2>
             </div>
-            <div class="caroussel">
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire1.png">
-                    <img src="../images/portfolio/wheeler-app/wire1.png" alt="">
+            <div class="caroussel-wheeler">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-1.svg">
+                    <p class="legende">Accueil</p>
+                    <img src="../images/portfolio/wheeler-app/maq-1.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire2.png">
-                    <img src="../images/portfolio/wheeler-app/wire2.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-2.svg">
+                    <p class="legende">Liste des motos</p>
+                    <img src="../images/portfolio/wheeler-app/maq-2.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire3.png">
-                    <img src="../images/portfolio/wheeler-app/wire3.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-3.svg">
+                    <p class="legende">Annonce d'une moto</p>
+                    <img src="../images/portfolio/wheeler-app/maq-3.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire4.png">
-                    <img src="../images/portfolio/wheeler-app/wire4.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-4.svg">
+                    <p class="legende">Récapitulatif</p>
+                    <img src="../images/portfolio/wheeler-app/maq-4.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire5.png">
-                    <img src="../images/portfolio/wheeler-app/wire5.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-5.svg">
+                    <p class="legende">Confirmation</p>
+                    <img src="../images/portfolio/wheeler-app/maq-5.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire6.png">
-                    <img src="../images/portfolio/wheeler-app/wire6.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-8.svg">
+                    <p class="legende">Liste des terrains</p>
+                    <img src="../images/portfolio/wheeler-app/maq-8.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire7.png">
-                    <img src="../images/portfolio/wheeler-app/wire7.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-6.svg">
+                    <p class="legende">Carte des terrains</p>
+                    <img src="../images/portfolio/wheeler-app/maq-6.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire8.png">
-                    <img src="../images/portfolio/wheeler-app/wire8.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-7.svg">
+                    <p class="legende">Descriptif d'un terrain</p>
+                    <img src="../images/portfolio/wheeler-app/maq-7.svg">
                 </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire9.png">
-                    <img src="../images/portfolio/wheeler-app/wire9.png" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire10.png">
-                    <img src="../images/portfolio/wheeler-app/wire10.png" alt="">
-                </a>
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-app/wire11.png">
-                    <img src="../images/portfolio/wheeler-app/wire11.png" alt="">
+                <a data-fancybox="gallery" class="ml-auto img-maq-wheeler"
+                    href="../images/portfolio/wheeler-app/maq-9.svg">
+                    <p class="legende">Le mur</p>
+                    <img src="../images/portfolio/wheeler-app/maq-9.svg">
                 </a>
             </div>
         </section>
-        <div class="row single-row" id="models">
-            <div class="col-12">
-                <h2 class="line-title">Maquettes</h2>
-            </div>
-            <div class="col-12 col-md-2
-             maquettes">
-                <a data-fancybox="gallery" class="ml-auto" href="../images/portfolio/wheeler-app/Group21.svg">
-                    <img src="../images/portfolio/wheeler-app/Group21.svg">
-                </a>
-            </div>
-        </div>
         <!-- Design thinking-->
         <div class="row single-row" id="design-thinking">
             <div class="col-12 single-title">
@@ -426,21 +427,7 @@
     <script>$('body').scrollspy({ target: '#main-nav' })</script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.caroussel').slick({
-                dots: false,
-                infinite: true,
-                autoplay: true,
-                speed: 800,
-                slidesToShow: 1,
-                centerMode: true,
-                variableWidth: true,
-                prevArrow: false,
-                nextArrow: false
-            });
-        });
-    </script>
+    <script src="../js/caroussel.js"></script>
     <script type="text/javascript">
         jQuery.fn.equalHeights = function () {
             var max_height = 0;
