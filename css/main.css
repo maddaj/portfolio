@@ -161,11 +161,11 @@ h2, .h02 {
 	text-align: center;
 }
 h3, .h03 {
-	font-size: 2rem;
+	font-size: 1.8rem;
 	line-height: 1.5;
 }
 h4, .h04 {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	line-height: 1.765;
 }
 h5, .h05 {
@@ -1175,6 +1175,18 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin: 0;
   }
 
+  .techno-right{
+	  padding-right: 7em;
+  }
+
+  .techno-left{
+	padding-left: 7em;
+}
+
+.techno-right h4, .techno-left h4{
+	border-left: solid 3px #6fb6fc;
+}
+
   .about-content i, .about-content li{
     font-size: 20px;
 }
@@ -1290,7 +1302,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 #work, #graduate, #techno {
-	padding-top: 10em;
+	padding-top: 7em;
 }
 
 .resume-timeline-grade h2{
@@ -2283,6 +2295,11 @@ svg {
 	transform: translateX(-50%);
 	margin-top: 5%;
   }
+
+  .button--scroll svg:hover{
+	fill: #6fb6fc;
+	transition: .2s;
+  }
   
   @keyframes upDown {
 	0% {
@@ -2392,8 +2409,8 @@ font-size: 2.2rem;
 }
 
 .project-description li{
-	list-style: none;
 	padding-left: 2em;
+	list-style: none;
 }
 
 .project-description li a, .project-description a{
@@ -2517,6 +2534,19 @@ font-size: 2.2rem;
 	  width: 85%;
   }
 
+  .first-ul{
+	 margin-bottom: 0!important;
+  }
+
+  .li-before li{
+	list-style: none;
+	padding-left: 2em;
+}
+
+	.li-before li:before{
+		content: "→ ";
+	}
+
   .color{
 	width: 70px;
     height: 70px;
@@ -2622,6 +2652,12 @@ letter-spacing: 1px;
 }
 .container-button button:nth-child(3){
 	color: #6fb6fc;
+}
+
+/* Subtitle exp */
+.resume-header .subtitle-exp{
+    font-size: 1.4rem;
+    color: #888888;
 }
 
 /*# sourceMappingURL=main.css.map */

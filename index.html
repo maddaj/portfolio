@@ -28,6 +28,7 @@
 		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
 	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/main.css">
 
 	<!-- favicons
@@ -110,7 +111,7 @@
 						<a href="#about" class="button--scroll animation animation--infinite animation--up-down"><svg
 								xmlns="http://www.w3.org/2000/svg" width="48" height="48"
 								viewBox="-275 398.7 44.2 44.2">
-								<path fill="#111111"
+								<path
 									d="M-275 420.8c0-12.2 9.9-22.1 22.1-22.1s22.1 9.9 22.1 22.1c0 12.2-9.9 22.1-22.1 22.1s-22.1-9.9-22.1-22.1zm42.7 0c0-11.4-9.2-20.6-20.6-20.6-11.4 0-20.6 9.2-20.6 20.6 0 11.4 9.2 20.6 20.6 20.6 11.4 0 20.6-9.3 20.6-20.6zM-260.6 418c0-.2.1-.4.2-.5.3-.3.8-.3 1.1 0l6.8 6.8 6.8-6.8c.3-.3.8-.3 1.1 0 .3.3.3.8 0 1.1l-7.3 7.3c-.3.3-.8.3-1.1 0l-7.3-7.3c-.3-.2-.3-.4-.3-.6z" />
 							</svg></a>
 					</div>
@@ -171,7 +172,7 @@
 			<div class="col-twelve resume-header">
 
 				<h2 class="line-title">EXPÉRIENCES PROFESSIONNELES</h2>
-				<p>Les 3 plus récentes</p>
+				<p class="subtitle-exp">Les 3 plus récentes</p>
 
 			</div> <!-- /resume-header -->
 			<div class="col-12 col-md-8">
@@ -182,7 +183,7 @@
 					<div class="timeline-block">
 
 						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
+							<i class="fa fa-briefcase"></i>
 						</div>
 
 						<div class="timeline-header">
@@ -207,7 +208,7 @@
 					<div class="timeline-block">
 
 						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
+							<i class="fa fa-briefcase"></i>
 						</div>
 
 						<div class="timeline-header">
@@ -232,7 +233,7 @@
 					<div class="timeline-block">
 
 						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
+							<i class="fa fa-briefcase"></i>
 						</div>
 
 						<div class="timeline-header">
@@ -279,7 +280,7 @@
 						<div class="timeline-block">
 
 							<div class="timeline-ico">
-								<i class="fa fa-briefcase"></i>
+								<i class="fa fa-graduation-cap"></i>
 							</div>
 
 							<div class="timeline-header">
@@ -309,7 +310,7 @@
 						<div class="timeline-block">
 
 							<div class="timeline-ico">
-								<i class="fa fa-briefcase"></i>
+								<i class="fa fa-graduation-cap"></i>
 							</div>
 
 							<div class="timeline-header">
@@ -331,7 +332,7 @@
 						<div class="timeline-block">
 
 							<div class="timeline-ico">
-								<i class="fa fa-briefcase"></i>
+								<i class="fa fa-graduation-cap"></i>
 							</div>
 
 							<div class="timeline-header">
@@ -376,10 +377,12 @@
 					</div>
 				</div>
 				<div class="row mb-5">
-					<div class="col-lg-7 h-100 jm-sticky-top ml-auto">
+					<div class="col-lg-8 h-100 jm-sticky-top ml-auto">
 						<span class="span-techno">#WordPress #PHP</span>
-						<h6 class="project-name">Svisory</h6>
-						<p class="project-type">Création d'un template WordPress de landing page</p>
+						<a href="project/wait.html">
+							<h6 class="project-name">Svisory</h6>
+							<p class="project-type">Création d'un template WordPress de landing page</p>
+						</a>
 						<p class="project-description">À l'agence parisienne <a
 								href="https://baltazare.fr/">Baltazare</a>, il m'a été demandé de créer le
 							template WordPress d'une landing page pour Svisory. <br><br> Une société de conseil en
@@ -390,18 +393,24 @@
 						</p>
 						<a href="project/wait.html" class="btn-arrow"><span>Découvrir le projet</span></a>
 					</div>
-					<div class="col-lg-5 mb-4 mb-lg-0">
-						<img src="images/portfolio/svisory/svisory-min.png" alt="Image" class="img-fluid">
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<a data-fancybox="gallery" href="images/portfolio/svisory/svisory-min.png">
+							<img src="images/portfolio/svisory/svisory-min.png" alt="Image" class="img-fluid">
+						</a>
 					</div>
 				</div>
 				<div class="row mb-5">
-					<div class="col-lg-5 mb-4 mb-lg-0">
-						<img src="images/portfolio/wheeler-app/wheeler-min.png" alt="Image" class="img-fluid">
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<a data-fancybox="gallery" href="images/portfolio/wheeler-app/wheeler-min.png">
+							<img src="images/portfolio/wheeler-app/wheeler-min.png" alt="Image" class="img-fluid">
+						</a>
 					</div>
-					<div class="col-lg-7 h-100 jm-sticky-top ml-auto">
+					<div class="col-lg-8 h-100 jm-sticky-top ml-auto">
 						<span class="span-techno">#Figma #UI/UX</span>
-						<h6 class="project-name">Prototype Wheeler</h6>
-						<p class="project-type">Design d'application</p>
+						<a href="project/wait.html">
+							<h6 class="project-name">Prototype Wheeler</h6>
+							<p class="project-type">Design d'application</p>
+						</a>
 						<p class="project-description">Chez WHEELER, l’objectif est de créer une expérience sociale
 							et
 							rentable autour d’une
@@ -414,10 +423,12 @@
 					</div>
 				</div>
 				<div class="row mb-5">
-					<div class="col-lg-7 h-100 jm-sticky-top ml-auto">
+					<div class="col-lg-8 h-100 jm-sticky-top ml-auto">
 						<span class="span-techno">#WordPress #Elementor #PHP</span>
-						<h6 class="project-name">Landing page Wheeler</h6>
-						<p class="project-type">Création d'une landing page sous WordPress</p>
+						<a href="project/wait.html">
+							<h6 class="project-name">Landing page Wheeler</h6>
+							<p class="project-type">Création d'une landing page sous WordPress</p>
+						</a>
 						<p class="project-description">Pour aller un peu plus loin dans mon projet de design
 							d'application mobile et faire suite au prototypage, j'ai réalisé une landing page
 							présentant
@@ -426,18 +437,25 @@
 						<a href="project/wait.html" class="btn-arrow"><span>Découvrir le
 								projet</span></a>
 					</div>
-					<div class="col-lg-5 mb-4 mb-lg-0">
-						<img src="images/portfolio/wheeler-landing/wheeler-land-min.png" alt="Image" class="img-fluid">
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<a data-fancybox="gallery" href="images/portfolio/wheeler-landing/wheeler-land-min.png">
+							<img src="images/portfolio/wheeler-landing/wheeler-land-min.png" alt="Image"
+								class="img-fluid">
+						</a>
 					</div>
 				</div>
 				<div class="row mb-5">
-					<div class="col-lg-5 mb-4 mb-lg-0">
-						<img src="images/portfolio/c-gatto/c-gatto-min.png" alt="Image" class="img-fluid">
+					<div class="col-lg-4 mb-4 mb-lg-0">
+						<a data-fancybox="gallery" href="images/portfolio/c-gatto/c-gatto-min.png">
+							<img src="images/portfolio/c-gatto/c-gatto-min.png" alt="Image" class="img-fluid">
+						</a>
 					</div>
-					<div class="col-lg-7 h-100 jm-sticky-top ml-auto">
+					<div class="col-lg-8 h-100 jm-sticky-top ml-auto">
 						<span class="span-techno">#HTML #CSS</span>
-						<h6 class="project-name">C.Gatto</h6>
-						<p class="project-type">Page d'accueil d'une pâtisserie haut de gamme</p>
+						<a href="project/wait.html">
+							<h6 class="project-name">C.Gatto</h6>
+							<p class="project-type">Page d'accueil d'une pâtisserie haut de gamme</p>
+						</a>
 						<p class="project-description">Imaginons une pâtissière qui se nommerait C.Gatto... <br><br>
 							À
 							travers cette page d'accueil un esprit de joaillerie a été donné pour mettre en valeur
@@ -457,11 +475,11 @@
 		<div class="container">
 			<div class="row services">
 				<div class="col-lg-12">
-					<h2 class="heading line-title">Compétences</h2>
+					<h2 class="heading line-title mb-5">Compétences</h2>
 					<!-- Front-end -->
 					<div class="row">
-						<div class="col-12 col-md-6 pr-md-5">
-							<h4 class="mt-5 mb-3">Front-end</h4>
+						<div class="col-12 col-md-6 techno-right my-4">
+							<h4 class="my-5 pl-3">Front-end</h4>
 							<div class="row text-center">
 								<div class="col-6 col-md-4">
 									<div class="box">
@@ -497,8 +515,8 @@
 						</div>
 						<br>
 						<!-- Back-end -->
-						<div class="col-12 col-md-6 pl-md-5">
-							<h4 class="mt-5 mb-3">Back-end</h4>
+						<div class="col-12 col-md-6 techno-left my-4">
+							<h4 class="my-5 pl-3">Back-end</h4>
 							<div class="row text-center">
 								<div class="col-6 col-md-4">
 									<div class="box">
@@ -533,8 +551,8 @@
 							</div>
 						</div>
 						<!-- Gestion de projet-->
-						<div class="col-12 col-md-6 pr-md-5">
-							<h4 class="mt-5 mb-3">Gestion de projet</h4>
+						<div class="col-12 col-md-6 techno-right my-4">
+							<h4 class="my-5 pl-3">Gestion de projet</h4>
 							<div class="row text-center">
 								<div class="col-6 col-md-4">
 									<div class="box">
@@ -563,8 +581,8 @@
 							</div>
 						</div>
 						<!-- CMS-->
-						<div class="col-12 col-md-6 pl-md-5">
-							<h4 class="mt-5 mb-3">SYSTÈMES de GESTION de CONTENU</h4>
+						<div class="col-12 col-md-6 techno-left my-4">
+							<h4 class="my-5 pl-3">SYSTÈMES de GESTION de CONTENU</h4>
 							<div class="row text-center">
 								<div class="col-6 col-md-4">
 									<div class="box">
@@ -581,8 +599,8 @@
 							</div>
 						</div>
 						<!-- Design -->
-						<div class="col-12 col-md-6 pl-md-5">
-							<h4 class="mt-5 mb-3">Design</h4>
+						<div class="col-12 col-md-6 techno-right my-4">
+							<h4 class="my-5 pl-3">Design</h4>
 							<div class="row text-center">
 								<div class="col-6 col-md-4">
 									<div class="box">
@@ -634,6 +652,7 @@
 		AOS.init();
 	</script>
 	<script>$('body').scrollspy({ target: '#main-nav' })</script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 	<script src="js/nav.js"></script>
 
 
