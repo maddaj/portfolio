@@ -71,6 +71,7 @@ body{
 	position: relative; 
 	height: auto; 
 	overflow-y: scroll;
+	font-size: medium;
 }
 
 span{
