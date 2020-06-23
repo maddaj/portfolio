@@ -2172,14 +2172,12 @@ footer {
 	font-family: "poppins-regular", sans-serif;
 }
 footer a, footer a:visited {
-	color: #FFFFFF;
+	color: #111111;
 }
 footer a:hover, footer a:focus {
 	color: #6fb6fc;
 }
-footer .row {
-	max-width: 900px;
-}
+
 footer .social {
 	text-align: right;
 }
@@ -2197,7 +2195,7 @@ footer .footer-social li {
 	padding: 0;
 }
 footer .footer-social li a {
-	color: #FFFFFF;
+	color: #111111;
 }
 footer .copyright span {
 	display: inline-block;
@@ -2520,7 +2518,7 @@ font-size: 2.2rem;
 }
 
 .single-header{
-	height: 500px;
+	height: 400px;
 	opacity: 0.3;
 }
 .wheeler{
@@ -2563,7 +2561,7 @@ font-size: 2.2rem;
   .color{
 	width: 70px;
     height: 70px;
-    border-radius: 10px;
+    border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
   }
