@@ -2498,10 +2498,15 @@ font-size: 2.2rem;
 	opacity: 0;
   }
 /* /////////////// SINGLE ///////// */
-.project-description, .wheeler-container p, .desc-process p, .desc-color p{
+.project-description, .wheeler-container p, .desc-process p, .desc-color p, .desc-typo p, .inspi{
 	font-size: medium;
 }
-.wheeler-container{
+
+.inspi{
+	font-style: italic;
+}
+
+.single-container{
 	padding-top: 5%;
 }
 
@@ -2518,10 +2523,17 @@ font-size: 2.2rem;
 	opacity: 0.3;
 }
 .wheeler{
-	background-image: url('../images/portfolio/header-single-wheeler.jpg');
+	background-image: url('../images/portfolio/wheeler-app/header-single-wheeler.jpg');
 	background-size: cover;
 	background-position: unset;
 }
+
+.c-gatto{
+	background-image: url('../images/portfolio/c-gatto/header-single-cgatto.png');
+	background-size: cover;
+	background-position: unset;
+}
+
 .project-title-single, .project-type-single{
 	display: flex;
     justify-content: center;
@@ -2568,6 +2580,19 @@ font-size: 2.2rem;
 	  background: black;
   }
 
+  .white{
+	  background: #FFFFFF;
+	  border: solid 1px #EBEBEB;
+  }
+
+  .gold{
+	  background: #c09628;
+  }
+
+  .light-gold{
+	  background: #d3c37b;
+  }
+
   .desc-color, .desc-process{
 	display: flex;
 	flex-direction: column;
@@ -2579,6 +2604,16 @@ font-size: 2.2rem;
 	  padding-right: 15px;
   }
 
+  .typo p{
+	margin-bottom: 1.5rem!important;
+  }
+
+  .typo img{
+	  display: flex;
+	  flex-direction: column;
+	  justify-content: center;
+  }
+
   /* ////// CAROUSSEL */
 
   .slick-slide{
@@ -2588,7 +2623,6 @@ font-size: 2.2rem;
   }
 
   .slick-track img{
-	width: 300px;
 	height: 300px;
 	padding: 0 5px;
   }
@@ -2669,7 +2703,7 @@ letter-spacing: 1px;
 text-decoration: none;
 }
 
-.caroussel-wheeler .legende{
+.legende {
 	margin-bottom: 0.5rem;
 	font-size: small;
 	text-align: center;

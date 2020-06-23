@@ -5,7 +5,7 @@ $(document).ready(function () {
         dots: false,
         infinite: true,
         autoplay: true,
-        speed: 800,
+        speed: 2000,
         slidesToShow: 1,
         centerMode: true,
         variableWidth: true,
@@ -16,7 +16,7 @@ $(document).ready(function () {
 $('.caroussel-wheeler').slick({
     dots: false,
     infinite: false,
-    speed: 900,
+    speed: 2000,
     slidesToShow: 6,
     slidesToScroll: 1,
     autoplay: true,

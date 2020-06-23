@@ -99,10 +99,9 @@
     </header> <!-- /header -->
 
     <section class="single-header wheeler">
-        <h1>WHEELER</h1>
     </section>
 
-    <section class="container wheeler-container">
+    <section class="container single-container">
         <!-- Presentation row -->
         <div class="row single-row">
             <div class="col-12 project-title-single">
@@ -138,7 +137,8 @@
                 </div>
                 <!-- Link -->
                 <div class="container-button">
-                    <button onclick="openWin()">
+                    <button
+                        onclick="window.open('https://www.figma.com/proto/RBZw254Bnd38ee1Ju7QqAZ/parcoursMotor?node-id=127%3A718&viewport=415%2C619%2C0.13539987802505493&scaling=scale-down','_blank');">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -379,15 +379,36 @@
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 typo">
                 <h3>Typographie</h3>
-                <div class="row">
+                <div class="row pb-3">
                     <div class="col-4">
-                        <span class="sf-ui-text">SF UI Text</span>
+                        <img src="../images/portfolio/wheeler-app/typo-sf.svg" alt="">
                     </div>
-                    <div class="col-8">
-                        <p>SF UI Text utilisé pour toutes les informations qui se trouvent sur l’appli, choisi car c’est
+                    <div class="col-8 desc-typo">
+                        <p>SF UI Text présente sur toutes les informations, choisi car c’est
                             une application pensée pour iPhone.
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-4">
+                        <img src="../images/portfolio/wheeler-app/typo-roboto.svg" alt="">
+                    </div>
+                    <div class="col-8 desc-typo">
+                        <p>ROBOTO pour son côté très classique, utilisé sur le logo présent dans
+                            l’application.
+                        </p>
+                    </div>
+                </div>
+                <div class="row pb-3">
+                    <div class="col-4">
+                        <img src="../images/portfolio/wheeler-app/typo-racing.svg" alt="">
+                    </div>
+                    <div class="col-8 desc-typo">
+                        <p>
+                            RACING SANS ONE pour le dynamisme et
+                            « l’agressivité », utilisé uniquement sur le poster.
                         </p>
                     </div>
                 </div>
@@ -442,7 +463,6 @@
             jQuery('h4').equalHeights();
         });
     </script>
-    <script src="../js/window.js"></script>
     <script src="../js/nav.js"></script>
 
 </body>
