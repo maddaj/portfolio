@@ -66,7 +66,7 @@ $('#contactForm').validate({
         $.ajax({
 
             type: "POST",
-            url: "inc/sendEmail.php",
+            url: "../inc/sendEmail.php",
             data: $(form).serialize(),
             beforeSend: function () {
 
