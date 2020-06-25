@@ -10,14 +10,13 @@
     <!--- basic page needs
    ================================================== -->
     <meta charset="utf-8">
-    <title>Portfolio - John Maddalena</title>
+    <title>Wheeler landing | Portfolio - John Maddalena</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
     <!-- mobile specific metas
    ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- CSS
    ================================================== -->
     <link rel="stylesheet" href="../css/base.css">
@@ -25,8 +24,10 @@
     <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- favicons
@@ -35,36 +36,10 @@
 
     <!-- icons
 	================================================== -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
     <link rel="stylesheet"
         href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet"
-        href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
 
 
 </head>
@@ -82,82 +57,146 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse row" id="navbarNavAltMarkup">
-                <ul class="nav-icon button-download col-12 col-md-2">
+                <ul class="nav-icon button-download col-12 col-md-2 d-flex">
                     <li>
-                        <a href="#" class="btn-download">CV</a>
+                        <a href="#"><i class="fas fa-file-download"></i></a>
                     </li>
-
                 </ul>
-                <div class="navbar-nav col-12 col-md-8 col-link-nav">
-                    <a class="" href="#">Home</a>
-                    <a class="" href="#about" title="">About</a>
-                    <a class="" href="#resume" title="">Resume</a>
-                    <a class="" href="#portfolio" title="">Portfolio</a>
+                <div id="main-nav" class="navbar-nav col-12 col-md-8 col-link-nav">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#intro">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#about" title="">A
+                                propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#work"
+                                title="">Expériences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#graduate"
+                                title="">Formations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#portfolio"
+                                title="">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cool-link" href="https://maddaj.github.io/portfolio/#techno"
+                                title="">Compétences</a>
+                        </li>
+                    </ul>
                 </div>
-                <ul class=" nav-icon col-12 col-md-2">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-                </ul> <!-- /intro-social -->
+                <ul class=" nav-icon col-12 col-md-2 d-flex">
+                    <li><a href="https://github.com/maddaj" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-codepen"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
             </div>
         </nav>
     </header> <!-- /header -->
 
     <section class="single-header wheeler">
-        <h1>WHEELER</h1>
     </section>
 
-    <section class="container">
-        <!-- Main row -->
-        <div class="row">
-            <div class="col-12 project-type-single">
-                <h2>Landing page Wheeler</h2>
+    <section class="container single-container">
+        <!-- Presentation row -->
+        <div class="row single-row">
+            <div class="col-12 project-title-single">
+                <h2 class="line-title">Landing page de l'application Wheeler</h2>
             </div>
-            <div class="col-12 project-type-single">
-                <p>Création d'une landing page sous WordPress</p>
+            <div class="col-12 project-type-single mb-5">
+                <p>Création d'une landing page avec un CMS</p>
             </div>
             <div class="col-12 col-md-6">
                 <!-- Description -->
-                <div class="project-description single-description">
-                    <p class="description">
-                        Pour aller un peu plus loin dans <a href="">mon projet de design
-                            d'application mobile </a> et faire suite au prototypage, j'ai réalisé une landing page
-                        présentant l'application ainsi qu'un blog.
-                        <br><br>
-                        Lors de la création de cette page de présentation, la charte graphique de l'application a été
-                        reprise pour obtenir une cohérence et ainsi mettre en avant les avantages liés à celle-ci.
+                <div class="project-description">
+                    <p>Ce projet a été réalisé avec le CMS WordPress. Le but était de concevoir une landing page pour
+                        présenter le projet de design d'<a
+                            href="https://maddaj.github.io/portfolio/project/wheeler-app.html">application mobile
+                            Wheeler</a>, afin de donner envie aux utilisateur de télécharger
+                        l’application et mettre en confiance à de “potentiels investisseurs”.
+                    </p>
+                    <p>L'objectif était aussi de diffuser du contenu sous forme d'un blog, donc d'ajouter un <a
+                            href="#cpt">CPT</a> dans le
+                        back-office qui permettrait une rédaction des articles plus facile à l'éditeur.</p>
+                    <p class="nb-button">N.B. : le projet étant hébergé sur un serveur de développement gratuit, vous
+                        pouvez voir
+                        s'afficher une erreur 504. En cas d'erreur, rafraichissez la page avec les touches CTRL Shift R.
+                    </p>
                 </div>
                 <!-- Link -->
-                <div class="mb-5">
-                    <a href="https://dev-landing-wheeler.pantheonsite.io/">Démo</a>
+                <div class="container-button">
+                    <button onclick="window.open('https://dev-landing-wheeler.pantheonsite.io/','_blank');">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Live démo
+                    </button>
                 </div>
-
-
                 <!-- Techno -->
                 <div class="single-techno">
-                    <span class="span-techno">#WordPress</span>
-
+                    <span class="span-techno">#PHP &nbsp; #WordPress &nbsp; #Elementor &nbsp; #HTML/CSS</span>
                 </div>
             </div>
             <!-- Main img -->
-            <div class="col-12 col-md-6">
-                <a data-fancybox="gallery" href="../images/portfolio/wheeler-landing/wheeler-landing.png">
-                    <img src="../images/portfolio/wheeler-landing/wheeler-landing.png">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <a data-fancybox="gallery" class="ml-auto" href="../images/portfolio/wheeler-landing/intro.gif">
+                    <img class="gif" src="../images/portfolio/wheeler-landing/intro.gif">
                 </a>
             </div>
         </div>
-
+        <!-- CPT -->
+        <div class="row single-row" id="cpt">
+            <div class="col-12 single-title">
+                <h2 class="line-title">Custom post type</h2>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+                <div class="caroussel-cpt">
+                    <a data-fancybox="gallery" href="../images/portfolio/wheeler-landing/cpt-bo.png">
+                        <p class="legende">Champs personnalisé du back-office</p>
+                        <img src="../images/portfolio/wheeler-landing/cpt-bo.png" alt="">
+                    </a>
+                    <a data-fancybox="gallery" href="../images/portfolio/wheeler-landing/cpt.png">
+                        <p class="legende">Affichage d'un article</p>
+                        <img src="../images/portfolio/wheeler-landing/cpt.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 m-0 desc-process aos-init aos-animate" data-aos="fade-right"
+                data-aos-offset="300">
+                <p>
+                    Grâce au plugin ACF (Advanced Custom Fields), j'ai pu créer des champs personnalisés simplifiant
+                    ainsi le travail de la personne qui rédigera les articles. L'utilisateur remplira par exemple un
+                    champ "Catégorie" spécifique à son besoin et cette donnée sera ensuite affichée dans l'article.
+                    <br><br>
+                    Une fois les champs créés, il a fallu les afficher dans le template du Custom Post Type. J'ai donc
+                    téléchargé le modèle d'un article via FileZilla, et je l'ai mis en page pour y afficher les champs
+                    personnalisés créés précédemment.
+                </p>
+            </div>
+        </div>
     </section>
-
-
 
     <!-- footer
    ================================================== -->
 
-    <footer>
-        <div class="copyright">
-            <span>© Copyright 2020</span>
-            <span>Design by <a href="https://github.com/maddaj">maddaj</a></span>
+    <footer id="contact" class="container">
+        <div class="row">
+            <div class="col-12 single-title d-flex justify-content-center">
+                <h2 class="line-title">Restons en contact !</h2>
+            </div>
+            <div class="col-12 d-flex justify-content-center footer-icon">
+                <a href="https://www.linkedin.com/in/j-maddalena/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCKHQdBGgnThpcKjHqqjPNQBgctMQpVzFRhFjhGZdFVxxMmjRgxhxbNVnRtTZMQbmKlllSfL"
+                    target="_blank"><i class="fas fa-envelope-square"></i></a>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="https://github.com/maddaj" target="_blank"> @maddaj</i></a>
         </div>
     </footer>
 
@@ -174,9 +213,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>$('body').scrollspy({ target: '#main-nav' })</script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/caroussel.js"></script>
+    <script type="text/javascript">
+        jQuery.fn.equalHeights = function () {
+            var max_height = 0;
+            jQuery(this).each(function () {
+                max_height = Math.max(jQuery(this).height(), max_height);
+            });
+            jQuery(this).each(function () {
+                jQuery(this).height(max_height);
+            });
+        };
+        jQuery(document).ready(function () {
+            jQuery('h4').equalHeights();
+        });
+    </script>
     <script src="../js/nav.js"></script>
-
 
 </body>
 

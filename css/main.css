@@ -1958,6 +1958,10 @@ font-size: 2.2rem;
 	height: 300px;
 	padding: 0 5px;
   }
+
+  .caroussel-cpt .slick-track img{
+	height: auto;
+  }
   /* /////////// CONSTRUCT PAGE */
   .construct-row{
 	  padding: 350px 0;
@@ -2021,7 +2025,7 @@ letter-spacing: 1px;
 }
 
 /* Subtitle exp */
-.resume-header .subtitle-exp, .legende{
+.resume-header .subtitle-exp, .legende, .nb-button{
     font-size: 1.4rem;
     color: #888888;
 }
@@ -2035,9 +2039,16 @@ letter-spacing: 1px;
 text-decoration: none;
 }
 
-.legende {
+.legende, .nb-button {
 	margin-bottom: 0.5rem;
 	font-size: small;
+}
+
+.nb-button{
+	font-style: italic;
+}
+
+.legende{
 	text-align: center;
 }
 
