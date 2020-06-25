@@ -141,7 +141,6 @@ h3, .h03, .h04 {
 	margin-bottom: 1.8rem;
 }
 h5, .h05, h6, .h06 {
-	font-family: "poppins-bold";
 	margin-bottom: 1.2rem;
 }
 h1, .h01 {
@@ -1301,12 +1300,20 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- 
  */
-#about, #work, #graduate, #portfolio, #techno, footer {
-	padding-top: 4.5em;
+#resume{
+	overflow-y: hidden;
 }
 
 #about, #work, #graduate, #portfolio, #techno{
+	padding-top: 6.5em;
+}
+
+#techno, #about{
 	padding-bottom: 10rem;
+}
+
+#work, #graduate, #portfolio{
+	padding-bottom: 0.5rem;
 }
 
 .resume-timeline-grade h2{
@@ -1474,7 +1481,6 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 #portfolio {
 	background: #FFFFFF;
 	padding-top: 4rem;
-	padding-bottom: 12rem;
 }
 #portfolio .folio-item {
 	padding: 0;
