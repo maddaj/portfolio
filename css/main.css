@@ -1866,17 +1866,20 @@ font-size: 2.2rem;
 .single-header{
 	height: 400px;
 	opacity: 0.3;
-}
-.wheeler{
-	background-image: url('../images/portfolio/wheeler-app/header-single-wheeler.jpg');
 	background-size: cover;
 	background-position: unset;
 }
 
+.wheeler{
+	background-image: url('../images/portfolio/wheeler-app/header-single-wheeler.jpg');
+}
+
 .c-gatto{
 	background-image: url('../images/portfolio/c-gatto/header-single-cgatto.png');
-	background-size: cover;
-	background-position: unset;
+}
+
+.svisory{
+	background-image: url('../images/portfolio/svisory/header-single-svisory.jpg');
 }
 
 .project-title-single, .project-type-single{
