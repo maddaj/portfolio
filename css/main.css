@@ -28,16 +28,6 @@
 
 /** 
  * ===================================================================
- * 01. webfonts and iconfonts - (_document-setup.scss)
- *
- * ------------------------------------------------------------------- 
- */
-@import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
-
-/** 
- * ===================================================================
  * 02. base style overrides - (_document-setup.scss)
  *
  * ------------------------------------------------------------------- 
@@ -184,10 +174,14 @@ p img {
 	margin: 0;
 }
 p.lead {
-	font-family: "lora-regular", serif;
 	font-size: 2rem;
 	line-height: 1.8;
-	color: #888888;
+	color: rgba(0,0,0,.5);
+	margin-bottom: 0;
+}
+
+#about .col-md-7{
+	align-self: center;
 }
 @media only screen and (max-width:768px) {
 	p.lead {
@@ -988,7 +982,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 .intro-content h1 {
 	color: #111111;
 	font-family: "poppins-medium", sans-serif;
-	font-size: 8.4rem;
+	font-size:12.4rem;
 	line-height: 1.071;
 	max-width: 900px;
 	margin-top: 0;
@@ -1042,7 +1036,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #6fb6fc
+	border-color: #6fb6fc;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -1154,19 +1148,12 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 .intro-info {
-	margin-top: 4.2rem;
-	margin-left: -30px;
+	margin-top: 6.2rem;
 }
 .intro-info img {
-	height: 20rem;
-	width: 20rem;
+	height: 25rem;
+	width: 25rem;
 	border-radius: 50%;
-	margin-right: 5rem;
-	float: left;
-}
-.intro-info .lead {
-	text-align: left;
-	padding-left: 13rem;
 }
 
 /* :::::::::::::::::::::: */
@@ -1306,7 +1293,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 }
 
 #about, #work, #graduate, #portfolio, #techno{
-	padding-top: 6.5em;
+	padding-top: 5.4em;
 }
 
 #techno, #about{
@@ -1632,7 +1619,7 @@ svg {
   .button--scroll {
 	position: absolute;
 	transform: translateX(-50%);
-	margin-top: 5%;
+	margin-top: 10%;
   }
 
   .button--scroll svg:hover{
@@ -1987,7 +1974,7 @@ font-size: 2.2rem;
   .container-button button{
 cursor: pointer;
 position: relative;
-margin: 20px 0;
+margin: 40px 0;
 background: transparent;
 height: 60px;
 font-size: 18px;
