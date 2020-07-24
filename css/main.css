@@ -1304,6 +1304,14 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	padding-bottom: 0.5rem;
 }
 
+#work{
+	padding-left: 0;
+}
+
+#graduate{
+	padding-right: 0;
+}
+
 .resume-timeline-grade h2{
 	margin-bottom: 1em;
 }
@@ -1643,8 +1651,16 @@ svg {
 	align-self: center;
   }
 
+  .col-img-work{
+	padding-left: 0;
+  }
+
+  .col-img-work img{
+	max-width: initial;
+  }
+
   .col-grade .col-twelve{
-	padding-left: 80px;
+	padding-left: 0;
     padding-right: 0;
   }
 
