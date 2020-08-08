@@ -10,7 +10,7 @@
     <!--- basic page needs
    ================================================== -->
     <meta charset="utf-8">
-    <title>WIP | Portfolio - John Maddalena</title>
+    <title>Street art project | Portfolio - John Maddalena</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -98,12 +98,43 @@
                 </ul>
             </div>
         </nav>
-    </header>
-    <section class="container">
-        <div class="row construct-row">
-            <div class="col-12 d-flex justify-content-center">
-                <h1>En cours de construction</h1>
+    </header> <!-- /header -->
+
+    <section class="single-header svisory">
+    </section>
+
+    <section class="container single-container">
+        <!-- Presentation row -->
+        <div class="row single-row">
+            <div class="col-12 project-title-single">
+                <h2 class="line-title">Street art project</h2>
             </div>
+            <div class="col-12 project-type-single mb-5">
+                <p>Création d'un site sur le street art en PHP</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <!-- Description -->
+                <div class="project-description">
+                    <p>SAP est un réseau social développé en POO et impl
+                    </p>
+                </div>
+                <!-- Link -->
+                <div class="container-button">
+                    <button onclick="window.open('https://shielded-savannah-97014.herokuapp.com/','_blank');">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Live démo
+                    </button>
+                </div>
+                <!-- Techno -->
+                <div class="single-techno">
+                    <span class="span-techno">#PHP &nbsp; #POO &nbsp; #MVC &nbsp; #ORM &nbsp; #Bootstrap</span>
+                </div>
+            </div>
+            <!-- Main img -->
+
         </div>
     </section>
 
@@ -139,9 +170,29 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>$('body').scrollspy({ target: '#main-nav' })</script>
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="../js/caroussel.js"></script>
+    <script type="text/javascript">
+        jQuery.fn.equalHeights = function () {
+            var max_height = 0;
+            jQuery(this).each(function () {
+                max_height = Math.max(jQuery(this).height(), max_height);
+            });
+            jQuery(this).each(function () {
+                jQuery(this).height(max_height);
+            });
+        };
+        jQuery(document).ready(function () {
+            jQuery('h4').equalHeights();
+        });
+    </script>
     <script src="../js/nav.js"></script>
-
 
 </body>
 
