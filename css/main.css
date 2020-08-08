@@ -1292,7 +1292,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	overflow-y: hidden;
 }
 
-#about, #work, #graduate, #portfolio, #techno{
+#about, #work, #graduate, #portfolio, #techno, footer{
 	padding-top: 5.4em;
 }
 
