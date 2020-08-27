@@ -1756,6 +1756,9 @@ font-size: 2.2rem;
 	text-decoration: none;
 }
 
+.min-movwie {
+	background: url("../images/portfolio/movwie/movwie-min.png");
+}
 .min-street {
 	background: url("../images/portfolio/street-art/street-min.png");
 }
@@ -1772,7 +1775,7 @@ font-size: 2.2rem;
 	background: url("../images/portfolio/c-gatto/c-gatto-min.png");
 }
 
-.min-cgatto, .min-wheeler, .min-wheeler-app, .min-svisory, .min-street{
+.min-cgatto, .min-wheeler, .min-wheeler-app, .min-svisory, .min-street, .min-movwie {
 	background-size: cover;
 	background-position: top;
 	background-repeat: no-repeat;
